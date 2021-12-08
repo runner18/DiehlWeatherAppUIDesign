@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="585.0" prefWidth="270.0" style="-fx-background-color: #4adede;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.diehlweatherappuidesign.HelloController">
+   <children>
+      <Pane layoutX="35.0" layoutY="40.0" prefHeight="188.0" prefWidth="200.0" style="-fx-background-color: #1AA7EC; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10, 0, 0, 0);">
+         <children>
+            <Label fx:id="temperatureLabel" alignment="CENTER" contentDisplay="CENTER" layoutY="129.0" prefHeight="37.0" prefWidth="200.0" text="Temperature" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Tahoma" size="48.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="weatherIcon" fitHeight="138.0" fitWidth="190.0" layoutX="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../01d_1.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Pane layoutX="35.0" layoutY="245.0" prefHeight="208.0" prefWidth="200.0" style="-fx-background-color: #1AA7EC; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10, 0, 0, 0);">
+         <children>
+            <Label fx:id="windLabel" alignment="TOP_CENTER" contentDisplay="CENTER" layoutY="154.0" prefHeight="54.0" prefWidth="200.0" text="Wind" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Tahoma" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="cloudsLabel" alignment="TOP_CENTER" contentDisplay="CENTER" layoutY="54.0" prefHeight="61.0" prefWidth="200.0" text="Clouds" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Tahoma" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="48.0" fitWidth="67.0" layoutX="76.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../cloudicon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="48.0" fitWidth="68.0" layoutX="76.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../windicon.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Pane layoutX="35.0" layoutY="471.0" prefHeight="71.0" prefWidth="200.0" style="-fx-background-color: #1AA7EC; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10, 0, 0, 0);">
+         <children>
+            <Label fx:id="timeLabel" alignment="CENTER" layoutY="8.0" prefHeight="17.0" prefWidth="200.0" text="timeLabel" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="dateLabel" alignment="CENTER" layoutY="36.0" prefHeight="17.0" prefWidth="200.0" text="dateLabel" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Button layoutX="81.0" layoutY="559.0" mnemonicParsing="false" onAction="#zipCodeChange" style="-fx-background-color: #1AA7EC;" text="Change ZIP Code" textFill="WHITE" />
+   </children>
+</AnchorPane>
